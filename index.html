@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Conversion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="root">
+      <div class="heading">
+        <p>Temperature Converter</p>
+      </div>
+      <form id="temp-form">
+        <section class="temperature">
+          <label for="temp">Enter the Temperature:</label>
+          <input type="number" name="input" id="temp" required />
+        </section>
+
+        <section class="input-section">
+          <fieldset class="fieldset">
+            <legend>Select temperature unit:</legend>
+            <input
+              type="radio"
+              name="selected-unit"
+              id="selected-Fahrenheit"
+              value="Fahrenheit"
+              class="radio-element"
+            />
+            <label for="selected-Fahrenheit">Fahrenheit</label>
+            <input
+              type="radio"
+              name="selected-unit"
+              id="selected-Celsius"
+              value="Celsius"
+              class="radio-element"
+            />
+            <label for="selected-Celsius">Celsius</label>
+            <input
+              type="radio"
+              name="selected-unit"
+              id="selected-Kelvin"
+              value="Kelvin"
+              class="radio-element"
+            />
+            <label for="selected-Kelvin">Kelvin</label>
+          </fieldset>
+        </section>
+
+        <section class="output-section">
+          <fieldset class="fieldset">
+            <legend>Select conversion unit:</legend>
+            <input
+              type="radio"
+              name="conversion-unit"
+              id="conversion-Fahrenheit"
+              value="Fahrenheit"
+              class="radio-element"
+            />
+            <label for="conversion-Fahrenheit">Fahrenheit</label>
+            <input
+              type="radio"
+              name="conversion-unit"
+              id="conversion-Celsius"
+              value="Celsius"
+              class="radio-element"
+            />
+            <label for="conversion-Celsius">Celsius</label>
+            <input
+              type="radio"
+              name="conversion-unit"
+              id="conversion-Kelvin"
+              value="Kelvin"
+              class="radio-element"
+            />
+            <label for="conversion-Kelvin">Kelvin</label>
+          </fieldset>
+        </section>
+
+        <button class="button-section" type="submit">Convert</button>
+
+        <section class="result">
+          <label for="output-temp">Converted temperature is:</label>
+          <input type="number" name="output" id="output-temp" />
+        </section>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
